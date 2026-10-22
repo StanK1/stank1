@@ -1,4 +1,4 @@
-# Generates the project cards. The dividers come from make_dividers.py. The banner is made by make_banner.py, the design corner by make_creative.py.
+# Generates the project cards. divider.svg is a static asset; the wireframe cards come from make_wireframes.py. The banner is made by make_banner.py, the design corner by make_creative.py.
 import pathlib
 OUT = pathlib.Path(__file__).parent
 FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Ubuntu,Helvetica,Arial,sans-serif"

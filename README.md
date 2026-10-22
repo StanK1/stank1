@@ -21,10 +21,7 @@
 - 🎓 Studying Software Technologies and Design at the University of Plovdiv.
 - 🔥 Off the keyboard I'm an artist at heart, and I **play with fire**. Literally.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-mesh-dark.svg">
-  <img src="assets/divider-mesh-light.svg" width="100%" alt="">
-</picture>
+<img src="assets/divider.svg" width="100%" alt="">
 
 ## 🚀 Things I'm building
 
@@ -40,10 +37,7 @@ I care how things look as much as how they work.
 
 <img src="assets/creative.svg" width="100%" alt="Animated illustration: a lightbulb switching on, gears turning, circles labelled Inspiration and Ideas, and my design tools: UX/UI, design systems, Figma, Photoshop, Illustrator, InDesign, After Effects, Premiere Pro, Blender">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-contours-dark.svg">
-  <img src="assets/divider-contours-light.svg" width="100%" alt="">
-</picture>
+<p align="center"><img src="assets/wireframe-a.svg" width="72%" alt=""></p>
 
 ## 🧰 What I reach for
 
@@ -93,10 +87,7 @@ I care how things look as much as how they work.
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-moons-dark.svg">
-  <img src="assets/divider-moons-light.svg" width="100%" alt="">
-</picture>
+<p align="center"><img src="assets/wireframe-b.svg" width="72%" alt=""></p>
 
 ## ⚡ Right now
 
