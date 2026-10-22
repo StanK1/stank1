@@ -1,16 +1,98 @@
-## Hi there 👋
+<!-- Profile README for github.com/StanK1 — lives in the repo StanK1/StanK1 -->
 
-<!--
-**StanK1/stank1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img src="assets/banner-light.svg" alt="Hey, I'm Stan — full-stack developer, automation engineer and AI tinkerer from Sofia, Bulgaria" width="100%">
+</picture>
 
-Here are some ideas to get you started:
+<p align="center">
+  <a href="https://kodastudio.eu"><img src="https://img.shields.io/badge/KODA_Studio-kodastudio.eu-7C6CFF?style=for-the-badge&labelColor=0B0F19" alt="KODA Studio"></a>
+  <a href="https://sito.homes"><img src="https://img.shields.io/badge/%D0%A1%D0%98%D0%A2%D0%9E-sito.homes-FF8A3D?style=for-the-badge&labelColor=0B0F19" alt="СИТО"></a>
+  <a href="https://www.linkedin.com/in/stanislavkrastev/"><img src="https://img.shields.io/badge/LinkedIn-stanislavkrastev-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0B0F19" alt="LinkedIn"></a>
+  <img src="https://komarev.com/ghpvc/?username=StanK1&style=for-the-badge&color=3DC593&label=visitors" alt="Profile visitors">
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 👋 About me
+
+- 🛠️ I build **web apps, automations and AI tools**, mostly with React, Next.js and TypeScript.
+- 🏦 By day I keep a bank's batch jobs running on time as a **UC4 / Automic engineer** at Commerzbank DTC.
+- 🚀 After hours I run **[KODA Studio](https://kodastudio.eu)**, a small AI product studio in Sofia, and build **[СИТО](https://sito.homes)**, which puts Bulgaria's property listings in one place.
+- 🤖 Currently exploring **AI enablement**: MCP servers, LLM agents, and making AI answer from real sources instead of memory.
+- 🎓 Studying Software Technologies and Design at the University of Plovdiv.
+- 🎨 Off the keyboard, I paint on **vinyl records**, and still catch Pokémon on a 3DS.
+
+## 🚀 Things I'm building
+
+<p align="center">
+  <a href="https://github.com/StanK1/lexbg-mcp"><img src="assets/card-lexbg.svg" width="32%" alt="LexBG — Bulgarian law for AI assistants"></a>
+  <a href="https://kodastudio.eu"><img src="assets/card-koda.svg" width="32%" alt="KODA Studio — Software that gets the job done"></a>
+  <a href="https://sito.homes"><img src="assets/card-sito.svg" width="32%" alt="СИТО — every property listing, once"></a>
+</p>
+
+## 🧰 What I reach for
+
+**Frontend** <br>
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0F172A?style=flat-square&logo=tailwindcss&logoColor=38BDF8)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
+
+**Mobile** <br>
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+
+**Backend & data** <br>
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![Symfony](https://img.shields.io/badge/Symfony-000000?style=flat-square&logo=symfony&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-1C1C1C?style=flat-square&logo=supabase&logoColor=3ECF8E)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+
+**Automation & AI** <br>
+![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP_servers-16202B?style=flat-square&logo=modelcontextprotocol&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
+![UC4 / Automic](https://img.shields.io/badge/UC4_%2F_Automic-1F2937?style=flat-square&logo=broadcom&logoColor=white)
+
+**Ship it** <br>
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
+
+## ⚡ Right now
+
+```ts
+const stan = {
+  location: "Sofia, Bulgaria 🇧🇬",
+  building: ["LexBG", "KODA Studio", "СИТО"],
+  learning: ["AI agents", "MCP", "evals that keep AI honest"],
+  dayJob: "keeping batch jobs on schedule (UC4 / Automic)",
+  offline: ["painting vinyl records 🎨", "Pokémon 🎮"],
+  askMeAbout: "React, automation, or how AI can read the law",
+};
+```
+
+## 📊 GitHub stats
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=StanK1&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0B0F19&title_color=3DC593&icon_color=7C6CFF&text_color=C9D3DF" alt="GitHub stats">
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=StanK1&layout=compact&hide_border=true&bg_color=0B0F19&title_color=3DC593&text_color=C9D3DF" alt="Top languages">
+</p>
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=StanK1&hide_border=true&background=0B0F19&ring=3DC593&fire=FF8A3D&currStreakLabel=3DC593&sideLabels=C9D3DF&currStreakNum=EEF2F6&sideNums=EEF2F6&dates=6E7B8C" alt="GitHub streak">
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/StanK1/StanK1/output/snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/StanK1/StanK1/output/snake.svg" alt="A snake eating my contribution graph" width="100%">
+</picture>
+
+<p align="center"><sub>Built with curiosity, too many browser tabs and a spinning record. Thanks for stopping by ✌️</sub></p>
