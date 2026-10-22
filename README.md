@@ -37,8 +37,6 @@ I care how things look as much as how they work.
 
 <img src="assets/creative.svg" width="100%" alt="Animated illustration: a lightbulb switching on, gears turning, circles labelled Inspiration and Ideas, and my design tools: UX/UI, design systems, Figma, Photoshop, Illustrator, InDesign, After Effects, Premiere Pro, Blender">
 
-<p align="center"><img src="assets/wireframe-a.svg" width="72%" alt=""></p>
-
 ## 🧰 What I reach for
 
 **Design** <br>
@@ -87,7 +85,7 @@ I care how things look as much as how they work.
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
-<p align="center"><img src="assets/wireframe-b.svg" width="72%" alt=""></p>
+
 
 ## ⚡ Right now
 
