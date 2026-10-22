@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Hey, I'm Stan — full-stack developer, automation engineer and AI tinkerer from Sofia, Bulgaria" width="100%">
+  <img src="assets/banner-light.svg" alt="Hi, I'm Stan: developer, designer and founder in Sofia, Bulgaria. An illustrated lightbulb, gears and circles labelled Inspiration and Ideas." width="100%">
 </picture>
 
 <p align="center">
@@ -19,7 +19,9 @@
 - 🚀 After hours I run **[KODA Studio](https://kodastudio.eu)**, a small AI product studio in Sofia, and build **[СИТО](https://sito.homes)**, which puts Bulgaria's property listings in one place.
 - 🤖 Currently exploring **AI enablement**: MCP servers, LLM agents, and making AI answer from real sources instead of memory.
 - 🎓 Studying Software Technologies and Design at the University of Plovdiv.
-- 🎨 Off the keyboard, I paint on **vinyl records**, and still catch Pokémon on a 3DS.
+- 🔥 Off the keyboard I'm an artist at heart, and I **play with fire**. Literally.
+
+<img src="assets/divider.svg" width="100%" alt="">
 
 ## 🚀 Things I'm building
 
@@ -29,7 +31,26 @@
   <a href="https://sito.homes"><img src="assets/card-sito.svg" width="32%" alt="СИТО — every property listing, once"></a>
 </p>
 
+## 🎨 Design corner
+
+I care how things look as much as how they work.
+
+<img src="assets/creative.svg" width="100%" alt="Animated illustration: a lightbulb switching on, gears turning, circles labelled Inspiration and Ideas, and my design tools: UX/UI, design systems, Figma, Photoshop, Illustrator, InDesign, After Effects, Premiere Pro, Blender">
+
+<img src="assets/divider.svg" width="100%" alt="">
+
 ## 🧰 What I reach for
+
+**Design** <br>
+![UX/UI](https://img.shields.io/badge/UX%20%2F%20UI-0B0F19?style=flat-square&logo=materialdesign&logoColor=3DC593)
+![Design systems](https://img.shields.io/badge/Design_systems-0B0F19?style=flat-square&logo=storybook&logoColor=FF8A3D)
+![Figma](https://img.shields.io/badge/Figma-1E1E1E?style=flat-square&logo=figma&logoColor=F24E1E)
+![Photoshop](https://img.shields.io/badge/Ps-Photoshop-31A8FF?style=flat-square&labelColor=001E36)
+![Illustrator](https://img.shields.io/badge/Ai-Illustrator-FF9A00?style=flat-square&labelColor=330000)
+![InDesign](https://img.shields.io/badge/Id-InDesign-FF3366?style=flat-square&labelColor=49021F)
+![After Effects](https://img.shields.io/badge/Ae-After_Effects-9999FF?style=flat-square&labelColor=00005B)
+![Premiere Pro](https://img.shields.io/badge/Pr-Premiere_Pro-9999FF?style=flat-square&labelColor=00005B)
+![Blender](https://img.shields.io/badge/Blender-1E1E1E?style=flat-square&logo=blender&logoColor=F5792A)
 
 **Frontend** <br>
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -65,7 +86,8 @@
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
+
+<img src="assets/divider.svg" width="100%" alt="">
 
 ## ⚡ Right now
 
@@ -75,24 +97,18 @@ const stan = {
   building: ["LexBG", "KODA Studio", "СИТО"],
   learning: ["AI agents", "MCP", "evals that keep AI honest"],
   dayJob: "keeping batch jobs on schedule (UC4 / Automic)",
-  offline: ["painting vinyl records 🎨", "Pokémon 🎮"],
+  offline: ["art 🎨", "playing with fire 🔥"],
   askMeAbout: "React, automation, or how AI can read the law",
 };
 ```
 
-## 📊 GitHub stats
+## 📊 GitHub, in numbers
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=StanK1&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0B0F19&title_color=3DC593&icon_color=7C6CFF&text_color=C9D3DF" alt="GitHub stats">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=StanK1&layout=compact&hide_border=true&bg_color=0B0F19&title_color=3DC593&text_color=C9D3DF" alt="Top languages">
-</p>
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=StanK1&hide_border=true&background=0B0F19&ring=3DC593&fire=FF8A3D&currStreakLabel=3DC593&sideLabels=C9D3DF&currStreakNum=EEF2F6&sideNums=EEF2F6&dates=6E7B8C" alt="GitHub streak">
-</p>
+<img src="https://raw.githubusercontent.com/StanK1/StanK1/output/stats.svg" alt="GitHub stats: contributions, commits, streak, repositories, languages and a year of activity" width="100%">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/StanK1/StanK1/output/snake-dark.svg">
   <img src="https://raw.githubusercontent.com/StanK1/StanK1/output/snake.svg" alt="A snake eating my contribution graph" width="100%">
 </picture>
 
-<p align="center"><sub>Built with curiosity, too many browser tabs and a spinning record. Thanks for stopping by ✌️</sub></p>
+<p align="center"><sub>Built with curiosity, too many browser tabs and a little bit of fire. Thanks for stopping by ✌️</sub></p>

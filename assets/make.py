@@ -1,71 +1,8 @@
-# Generates the profile SVGs (dark + light banner, project cards). Re-run after edits.
+# Generates the project cards and the divider. The banner is made by make_banner.py, the design corner by make_creative.py.
 import pathlib
 OUT = pathlib.Path(__file__).parent
 FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Ubuntu,Helvetica,Arial,sans-serif"
 MONO = "ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace"
-
-LINES = [
-    "I build web apps with React &amp; Next.js",
-    "I automate the boring stuff (bank batch jobs included)",
-    "I teach AI to read Bulgarian law",
-    "I paint on vinyl records 🎨",
-]
-
-def banner(theme):
-    dark = theme == "dark"
-    bg1, bg2 = ("#0B0F19", "#121A2B") if dark else ("#FBFAF7", "#EEF3F1")
-    ink = "#E8EDF2" if dark else "#121826"
-    muted = "#8A97A8" if dark else "#5C6675"
-    accent = "#3DC593" if dark else "#0E7A5A"
-    dot = "#1C2638" if dark else "#DCE3E0"
-    cycle = 16
-    slot = cycle / len(LINES)
-    texts = []
-    for i, line in enumerate(LINES):
-        t0 = i * slot / cycle
-        def k(x): return f"{min(max(x, 0), 1):.4f}"
-        kt = ["0", k(t0), k(t0 + 1.4 / cycle), k(t0 + (slot - 0.6) / cycle), k(t0 + slot / cycle), "1"]
-        # keyTimes must be strictly increasing; collapse duplicates
-        vals = ["0", "0", "760", "760", "0", "0"]
-        pairs = []
-        for a, b in zip(kt, vals):
-            if pairs and pairs[-1][0] == a:
-                pairs[-1] = (a, b)
-            else:
-                pairs.append((a, b))
-        kts = ";".join(p[0] for p in pairs)
-        vs = ";".join(p[1] for p in pairs)
-        texts.append(f'''
-    <clipPath id="c{i}{theme}"><rect x="96" y="150" height="44" width="0">
-      <animate attributeName="width" dur="{cycle}s" repeatCount="indefinite" keyTimes="{kts}" values="{vs}"/>
-    </rect></clipPath>
-    <text x="100" y="182" clip-path="url(#c{i}{theme})" font-family="{MONO}" font-size="26" fill="{accent}">&gt; {line}</text>''')
-    grooves = "".join(f'<circle r="{r}" fill="none" stroke="#2A2A2A" stroke-width="1"/>' for r in range(46, 118, 7))
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Hey, I'm Stan — full-stack developer from Sofia">
-  <defs>
-    <linearGradient id="bg{theme}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{bg1}"/><stop offset="1" stop-color="{bg2}"/></linearGradient>
-    <pattern id="dots{theme}" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="{dot}"/></pattern>
-    <linearGradient id="paint{theme}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF6B6B"/><stop offset=".35" stop-color="#FFD166"/><stop offset=".65" stop-color="#3DC593"/><stop offset="1" stop-color="#7C6CFF"/></linearGradient>
-  </defs>
-  <rect width="1200" height="320" rx="24" fill="url(#bg{theme})"/>
-  <rect width="1200" height="320" rx="24" fill="url(#dots{theme})" opacity=".7"/>
-  <text x="96" y="122" font-family="{FONT}" font-size="64" font-weight="800" fill="{ink}">Hey, I’m Stan <tspan>👋</tspan></text>{''.join(texts)}
-  <text x="100" y="250" font-family="{FONT}" font-size="20" fill="{muted}">Full-stack developer · automation engineer · AI tinkerer — Sofia, Bulgaria 🇧🇬</text>
-  <g transform="translate(1010 160)">
-    <circle r="124" fill="{accent}" opacity=".12"/>
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
-      <circle r="118" fill="#111"/>
-      {grooves}
-      <path d="M-118 0 A118 118 0 0 1 -40 -111 L-14 -40 A42 42 0 0 0 -42 0 Z" fill="url(#paint{theme})" opacity=".85"/>
-      <path d="M60 102 Q 100 40 116 -20" stroke="#FFD166" stroke-width="6" fill="none" stroke-linecap="round" opacity=".9"/>
-      <path d="M30 112 Q 80 70 104 10" stroke="#FF6B6B" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/>
-      <circle r="40" fill="url(#paint{theme})"/>
-      <text y="6" text-anchor="middle" font-family="{FONT}" font-size="16" font-weight="800" fill="#111">STAN</text>
-      <circle r="4" fill="#111"/>
-    </g>
-  </g>
-</svg>'''
 
 CARDS = {
     "lexbg": dict(icon="§", name="LexBG", tag="Bulgarian law for AI assistants",
@@ -106,8 +43,27 @@ def card(key, d):
   <text x="392" y="218" text-anchor="end" font-family="{MONO}" font-size="12" fill="#6E7B8C">{d['url']} ↗</text>
 </svg>'''
 
-for t in ("dark", "light"):
-    (OUT / f"banner-{t}.svg").write_text(banner(t), encoding="utf-8")
 for k, d in CARDS.items():
     (OUT / f"card-{k}.svg").write_text(card(k, d), encoding="utf-8")
 print("ok")
+
+# ---------------------------------------------------------------- creative bits
+
+def sparkle(x, y, s, col, delay):
+    return f'''<g transform="translate({x} {y}) scale({s})"><path d="M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5 Z" fill="{col}">
+      <animate attributeName="opacity" values="0;1;0" dur="3s" begin="{delay}s" repeatCount="indefinite"/></path></g>'''
+
+def divider():
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="70" viewBox="0 0 1200 70" role="img" aria-label="">
+  <defs><linearGradient id="dv" x1="0" x2="1"><stop offset="0" stop-color="#3DC593"/><stop offset=".5" stop-color="#7C6CFF"/><stop offset="1" stop-color="#FF8A3D"/></linearGradient></defs>
+  <path d="M40 38 C 120 8, 180 62, 260 34 S 400 10, 480 36 S 620 62, 700 34 S 840 8, 920 36 S 1060 60, 1160 32" fill="none" stroke="url(#dv)" stroke-width="4" stroke-linecap="round" stroke-dasharray="1400" stroke-dashoffset="1400">
+    <animate attributeName="stroke-dashoffset" values="1400;0;0;1400" keyTimes="0;.35;.85;1" dur="8s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="300" cy="18" r="6" fill="none" stroke="#FFD166" stroke-width="3"><animateTransform attributeName="transform" type="translate" values="0 0;0 6;0 0" dur="3s" repeatCount="indefinite"/></circle>
+  <rect x="640" y="50" width="12" height="12" rx="2" fill="none" stroke="#FF6B6B" stroke-width="3" transform="rotate(20 646 56)"><animateTransform attributeName="transform" type="rotate" values="0 646 56;90 646 56;0 646 56" dur="6s" repeatCount="indefinite"/></rect>
+  <path d="M1000 14 l9 16 h-18 z" fill="none" stroke="#4FB3FF" stroke-width="3" stroke-linejoin="round"><animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="4s" repeatCount="indefinite"/></path>
+  {sparkle(150, 20, .8, "#FFD166", 0)}{sparkle(860, 54, .7, "#7C6CFF", 1.2)}{sparkle(1110, 16, .9, "#3DC593", 2.1)}
+</svg>'''
+
+(OUT / "divider.svg").write_text(divider(), encoding="utf-8")
+print("cards + divider ok")
