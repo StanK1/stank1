@@ -1,4 +1,4 @@
-# Generates the project cards and the divider. The banner is made by make_banner.py, the design corner by make_creative.py.
+# Generates the project cards. The dividers come from make_dividers.py. The banner is made by make_banner.py, the design corner by make_creative.py.
 import pathlib
 OUT = pathlib.Path(__file__).parent
 FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Ubuntu,Helvetica,Arial,sans-serif"
@@ -47,23 +47,4 @@ for k, d in CARDS.items():
     (OUT / f"card-{k}.svg").write_text(card(k, d), encoding="utf-8")
 print("ok")
 
-# ---------------------------------------------------------------- creative bits
-
-def sparkle(x, y, s, col, delay):
-    return f'''<g transform="translate({x} {y}) scale({s})"><path d="M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5 Z" fill="{col}">
-      <animate attributeName="opacity" values="0;1;0" dur="3s" begin="{delay}s" repeatCount="indefinite"/></path></g>'''
-
-def divider():
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="70" viewBox="0 0 1200 70" role="img" aria-label="">
-  <defs><linearGradient id="dv" x1="0" x2="1"><stop offset="0" stop-color="#3DC593"/><stop offset=".5" stop-color="#7C6CFF"/><stop offset="1" stop-color="#FF8A3D"/></linearGradient></defs>
-  <path d="M40 38 C 120 8, 180 62, 260 34 S 400 10, 480 36 S 620 62, 700 34 S 840 8, 920 36 S 1060 60, 1160 32" fill="none" stroke="url(#dv)" stroke-width="4" stroke-linecap="round" stroke-dasharray="1400" stroke-dashoffset="1400">
-    <animate attributeName="stroke-dashoffset" values="1400;0;0;1400" keyTimes="0;.35;.85;1" dur="8s" repeatCount="indefinite"/>
-  </path>
-  <circle cx="300" cy="18" r="6" fill="none" stroke="#FFD166" stroke-width="3"><animateTransform attributeName="transform" type="translate" values="0 0;0 6;0 0" dur="3s" repeatCount="indefinite"/></circle>
-  <rect x="640" y="50" width="12" height="12" rx="2" fill="none" stroke="#FF6B6B" stroke-width="3" transform="rotate(20 646 56)"><animateTransform attributeName="transform" type="rotate" values="0 646 56;90 646 56;0 646 56" dur="6s" repeatCount="indefinite"/></rect>
-  <path d="M1000 14 l9 16 h-18 z" fill="none" stroke="#4FB3FF" stroke-width="3" stroke-linejoin="round"><animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="4s" repeatCount="indefinite"/></path>
-  {sparkle(150, 20, .8, "#FFD166", 0)}{sparkle(860, 54, .7, "#7C6CFF", 1.2)}{sparkle(1110, 16, .9, "#3DC593", 2.1)}
-</svg>'''
-
-(OUT / "divider.svg").write_text(divider(), encoding="utf-8")
-print("cards + divider ok")
+print("cards ok")
